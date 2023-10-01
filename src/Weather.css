@@ -1,0 +1,108 @@
+.Weather input {
+  border: none;
+  border-radius: 10px;
+  padding: 6px 12px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.Weather input[type="text"] {
+  width: 450px;
+}
+.Weather h2 {
+  font-size: 70px;
+  margin-bottom: -15px;
+}
+.Weather h3 {
+  font-size: 25px;
+  line-height: 25px;
+}
+.Weather h3::first-letter {
+  text-transform: capitalize;
+}
+.Weather a {
+  text-decoration: none;
+  color: #6841ac;
+}
+.Weather ul {
+  font-size: 18px;
+  color: #edf9a9;
+  list-style: none;
+  margin-top: 80px;
+}
+.Weather .weather-app {
+  background-color: rgb(255, 255, 255, 0.1);
+  font-family: "Source Sans Pro", sans-serif;
+  border: solid 1px rgb(255, 255, 255, 0.3);
+  border-radius: 15px;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px 20px 5px 20px;
+}
+.Weather .city-search-field {
+  background-color: #ea4248;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 12px;
+  margin-left: -50px;
+}
+.Weather .city-search-field:hover {
+  background-color: #f65b60;
+  color: #ffffff;
+}
+.Weather .units {
+  font-size: 35px;
+  position: relative;
+  bottom: 20px;
+}
+.Weather .weather-icon {
+  position: relative;
+  width: 115px;
+  bottom: 10px;
+
+  margin-left: -25px;
+}
+
+.Weather .humidity {
+  margin-left: 5px;
+}
+.Weather .btn-primary {
+  background-color: #1b0d40;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+}
+.Weather .btn-primary:hover {
+  background-color: #251258;
+  border: none;
+}
+.Weather .card-body {
+  text-align: center;
+  font-size: 19px;
+  color: #ffffff;
+  background-color: rgba(151, 100, 194, 0.65);
+  margin-bottom: 20px;
+}
+.Weather .weather-forecast-temperature-min {
+  color: #513285;
+}
+.Weather .credits {
+  color: #ffffff;
+  opacity: 0.6;
+  text-align: center;
+}
+.Weather .credits a {
+  color: #edf9a9;
+  margin-bottom: 20px;
+}
+
+.Weather .active {
+  color: #ffffff;
+  cursor: default;
+}
+.Weather .active:hover {
+  text-decoration: none;
+}
