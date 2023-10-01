@@ -89,15 +89,6 @@
 .Weather .weather-forecast-temperature-min {
   color: #513285;
 }
-.Weather .credits {
-  color: #ffffff;
-  opacity: 0.6;
-  text-align: center;
-}
-.Weather .credits a {
-  color: #edf9a9;
-  margin-bottom: 20px;
-}
 
 .Weather .active {
   color: #ffffff;
