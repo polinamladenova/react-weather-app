@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import "./Weather.css";
 import weather from "./scattered-clouds-icon.png";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       city: response.data.name,
       temperature: response.data.main.temp,
@@ -14,7 +16,8 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       icon: { weather },
-      time: "Wed 7:00",
+      date: new Date(response.data.dt * 1000),
+      time: "7:00",
       ready: true,
     });
   }
@@ -61,7 +64,7 @@ export default function Weather(props) {
               </h2>
               <br />
               <h3>
-                {weatherData.date} | {weatherData.time}
+                <FormattedDate date={weatherData.date} />
               </h3>
               <h3>{weatherData.description}</h3>
               <br />
