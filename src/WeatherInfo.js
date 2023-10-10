@@ -36,16 +36,6 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      <button
-        className="btn btn-primary"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseExample"
-        aria-expanded="false"
-        aria-controls="collapseExample"
-      >
-        6-Day Forecast
-      </button>
     </div>
   );
 }
